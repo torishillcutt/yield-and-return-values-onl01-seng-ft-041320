@@ -1,9 +1,9 @@
 require 'pry'
 
-def hello(array)
+def hello(coll)
   i = 0
-  while i < array.length
-    yield(array[i])
+  while i < coll.length
+    yield(coll[i])
     i += 1
   end
 end
