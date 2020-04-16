@@ -1,12 +1,12 @@
 require 'pry'
 
-def hello(array)
+def hello(coll)
   i = 0
-  while i < array.length
-    yield(array[i])
+  while i < coll.length
+
+    yield(coll[i])
     i += 1
   end
 end
 
-
-hello(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
+hello(["Tim", "Tom", "Jim"]) { |name| "Hi, #{name}" }
